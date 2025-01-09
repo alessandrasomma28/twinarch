@@ -1,17 +1,68 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
-header {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 5px;
+/* Navbar */
+.navbar-brand {
+    color: #2c3e50 !important;
+    font-weight: bold;
 }
 
+.nav-link {
+    color: #2c3e50 !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Hero Section */
+header {
+    background: #f8f9fa;
+    padding: 4rem 0;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+header hr {
+    width: 100px;
+    margin: 1rem auto;
+    border: 2px solid #007bff;
+}
+
+/* Call-to-Action */
+.btn-primary {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Card Section */
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
 footer {
     background: #f8f9fa;
-    padding: 1rem 0;
-    margin-top: 2rem;
     border-top: 1px solid #ddd;
+    color: #6c757d;
 }
