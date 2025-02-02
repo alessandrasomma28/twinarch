@@ -29,6 +29,7 @@ body {
 
 .nav-link:hover {
     color: #0056b3 !important;
+    background-color: #f1f1f1;
 }
 
 /* Header Section */
@@ -37,6 +38,7 @@ header {
     padding: 4rem 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 header h1 {
@@ -45,39 +47,74 @@ header h1 {
     color: #2c3e50;
 }
 
+header h2 {
+    font-size: 1.8rem;
+    color: #6c757d;
+}
+
 header p {
     font-size: 1.2rem;
     color: #6c757d;
 }
 
-/* Content Section */
-section.container {
+/* Sections and Content */
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-top: 2rem;
 }
 
-section h3 a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-section h3 a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
 }
 
 section p {
     color: #6c757d;
+    font-size: 1rem;
+    text-align: center;
 }
+
+/* Image Styling */
+section img {
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+/* General Styling for <hr> separator */
+hr.greysep {
+    border: 10px dotted red;
+    height: 5px;
+    background-color: #007bff;
+    width: 80%;
+    margin: 2rem auto; /* Center it and add space around */
+    border-radius: 5px;
+}
+
 
 /* Footer */
 footer {
     background-color: #f8f9fa;
     color: #6c757d;
-    margin-top: 2rem;
-    border-top: 1px solid #ddd;
     padding: 1rem 0;
     font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Styling */
@@ -90,35 +127,16 @@ footer {
         font-size: 2rem;
     }
 
+    header h2 {
+        font-size: 1.5rem;
+    }
+
     header p {
         font-size: 1rem;
     }
 
-    section .col-md-4 {
-        margin-bottom: 2rem;
+    section img {
+        width: 100%;
+        border-radius: 5px;
     }
 }
-
-
-
-/* Navbar link hover effect */
-.nav-link:hover, .dropdown-item:hover {
-    background-color: #f1f1f1;
-    color: #0056b3 !important;
-}
-
-/* Active link styling */
-.nav-link.active {
-    font-weight: bold;
-    color: #007bff !important;
-}
-
-/* Decorative separator */
-.separator {
-    width: 100%;
-    height: 3px; /* Slightly thicker for better visibility */
-    background-color: #007bff;
-    border-radius: 4px;
-    margin: 2rem 0; /* Adds space before and after the separator */
-}
-
