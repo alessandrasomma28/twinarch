@@ -23,10 +23,18 @@
                                 TwinArch Catalogue
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="catalogueDropdown">
-                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/module-twin-view.html">Module Twin View</a></li>
-                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/component-twin-view.html">Component Twin View</a></li>
-                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/traceability-twin-view.html">Traceability Twin View</a></li>
-                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/dynamic-twin-view.html">Dynamic Twin View</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/mtv.html">Module Twin
+                                    View</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/ctv.html">Component Twin
+                                    View</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/ttv.html">Traceability Twin
+                                    View</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/dtv.html">Dynamic Twin
+                                    View</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -56,7 +64,7 @@
         <p>This page complements the paper <i>"TwinArch: A Digital Twin Reference Architecture"</i> and serves as an online repository of architectural elements and views for designing and documenting Digital Twin systems.</p>
     </section>
 
-   <hr class="greysep">
+   <hr class="custom-hr">
 
      <!-- TwinArch Catalogue Section -->
     <section class="container my-5">
@@ -66,6 +74,35 @@
         </div>
         <p class="mt-3 text-center text-muted">An overview of TwinArch' structure. </p>
     </section>
+    <section class="container my-5">
+    <p class="text-justify"> TwinArch is designed and documented following the <strong>Views and
+        Beyond</strong> method, proposed by the Software Engineering Institute (SEI). Therefore, TwinArch is
+        organized into multiple <i>architectural views</i>, with each one addressing specific aspects of a Digital Twin system.
+    </p>
+
+    <p class="text-justify">
+        The <a href="https://alessandrasomma28.github.io/twinarch/mtv.html" class="text-decoration-none"
+               target="_blank"><strong>Module Twin View</strong></a> (MTV) models the <i>Digital Twin domain
+        entities</i>
+        using the <em>UML Class Diagram</em> notation.
+
+        At a more detailed level, the <a href="https://alessandrasomma28.github.io/twinarch/ctv.html"
+                                          class="text-decoration-none" target="_blank"><strong>Component Twin
+        View</strong></a> (CTV) focuses on <i>Digital Twin components</i> and their interactions using the <em>UML
+        Component Diagram</em>.
+
+        The <a href="https://alessandrasomma28.github.io/twinarch/traceability-twin-view.html"
+               class="text-decoration-none" target="_blank"><strong>Traceability Twin View</strong></a> (TTV) bridges
+        maps the structural elements of the Module and the Component views using a <em>Matrix Diagram</em>.
+
+        Finally, the <a href="https://alessandrasomma28.github.io/twinarch/dynamic-twin-view.html"
+                        class="text-decoration-none" target="_blank"><strong>Dynamic Twin View</strong></a> focuses
+        on capturing the runtime interactions between different structural elements (classes or components) using
+        <em>UML Sequence Diagrams</em>, in two use cases (monitoring and prediction).
+    </p>
+    </section>
+
+
 
     <!-- Footer -->
     <footer class="footer bg-light py-3 text-center">
