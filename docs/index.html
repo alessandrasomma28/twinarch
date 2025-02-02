@@ -9,49 +9,65 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">TwinArch</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="slr.html">SLR</a></li>
-                    <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
-                    <li class="nav-item"><a class="nav-link" href="validation.html">Validation</a></li>
-                </ul>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">TwinArch</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="catalogueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TwinArch Catalogue
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/module-twin-view.html">Module Twin View</a></li>
+                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/component-twin-view.html">Component Twin View</a></li>
+                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/traceability-twin-view.html">Traceability Twin View</a></li>
+                                <li><a class="dropdown-item" href="https://alessandrasomma28.github.io/twinarch/dynamic-twin-view.html">Dynamic Twin View</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/slr.html">Literature Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/validation.html">Evaluation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/authors.html">Authors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/research.html">Cite Us!</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Header Section -->
-    <header class="container text-center my-5">
-        <h1>TwinArch</h1>
-        <h2>Digital Twin Reference Architecture </h2>
+        </nav>
     </header>
 
-    <!-- Content Section -->
-    <section class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3><a href="slr.html">Systematic Literature Review</a></h3>
-                <p>Details and findings of the systematic literature review.</p>
-            </div>
-            <div class="col-md-4">
-                <h3><a href="architecture.html">Architecture</a></h3>
-                <p>Explore architectural diagrams and details.</p>
-            </div>
-            <div class="col-md-4">
-                <h3><a href="validation.html">Validation</a></h3>
-                <p>Learn how the architecture is validated with practitioners.</p>
-            </div>
+    <!-- Header Section -->
+    <section class="container text-center my-5">
+        <h1 class="display-4">TwinArch</h1>
+        <h2 class="text-muted">Digital Twin Reference Architecture</h2>
+        <p>This page complements the paper <i>"TwinArch: A Digital Twin Reference Architecture"</i> and serves as an online repository of architectural elements and views for designing and documenting Digital Twin systems.</p>
+    </section>
+
+     <!-- TwinArch Catalogue Section -->
+    <section class="container my-5">
+        <h2 class="mb-4">TwinArch Catalogue</h2>
+        <div class="text-center">
+            <img src="./figures/twinarchstructure.png" alt="TwinArch Structure" class="img-fluid shadow-lg rounded" style="max-width: 100%; height: auto;">
         </div>
+        <p class="mt-3 text-center text-muted">An overview of the structural organization and key components within the TwinArch framework.</p>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-3">
-        <p>© 2025 TwinArch - All Rights Reserved</p>
+    <footer class="footer bg-light py-3 text-center">
+        <p>&copy; 2025 TwinArch Project - All Rights Reserved | <a href="https://alessandrasomma28.github.io/twinarch/authors.html" class="text-decoration-none">View Authors</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

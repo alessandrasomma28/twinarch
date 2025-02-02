@@ -22,8 +22,13 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link.active {
     color: #007bff !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important;
 }
 
 /* Header Section */
@@ -92,4 +97,16 @@ footer {
     section .col-md-4 {
         margin-bottom: 2rem;
     }
+}
+
+/* Navbar link hover effect */
+.nav-link:hover, .dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #0056b3 !important;
+}
+
+/* Active link styling */
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff !important;
 }
