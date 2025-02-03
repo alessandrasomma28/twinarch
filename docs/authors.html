@@ -3,29 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authors - TwinArch</title>
+    <title>Systematic Literature Review </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .box {
+            background-color: #bfdbf7;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">TwinArch</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="slr.html">SLR</a></li>
-                    <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
-                    <li class="nav-item"><a class="nav-link" href="validation.html">Validation</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="authors.html">Authors</a></li>
-                </ul>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">TwinArch</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                               href="https://alessandrasomma28.github.io/twinarch/architecture.html"
+                               id="catalogueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            TwinArch Catalogue
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/mtv.html">Module Twin
+                                    View</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/ctv.html">Component Twin
+                                    View</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/ttv.html">Traceability Twin
+                                    View</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://alessandrasomma28.github.io/twinarch/dtv.html">Dynamic Twin
+                                    View</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/slr.html">Literature Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/validation.html">Evaluation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/authors.html">Authors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://alessandrasomma28.github.io/twinarch/research.html">Cite Us!</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+
 
     <!-- Authors Section -->
     <section class="container text-center my-5">
@@ -34,26 +78,34 @@
 
         <div class="row mt-4">
             <div class="col-md-4">
-                <h3>Author 1</h3>
-                <p>Role: Lead Architect</p>
-                <p>Email: author1@example.com</p>
+                <h3>Alessandra Somma</h3>
+                <p>Post-doc Researcher</p>
+                <p>alessandra.somma@unina.it</p>
             </div>
             <div class="col-md-4">
-                <h3>Author 2</h3>
-                <p>Role: Software Engineer</p>
-                <p>Email: author2@example.com</p>
+                <h3>Domenico Amalfitano</h3>
+                <p>Assistant Professor</p>
+                <p>domenico.amalfitano@unina.it</p>
             </div>
             <div class="col-md-4">
-                <h3>Author 3</h3>
-                <p>Role: Project Coordinator</p>
-                <p>Email: author3@example.com</p>
+                <h3>Alessandra De Benedictis</h3>
+                <p>Associate Professor</p>
+                <p>alessandra.debenedictis@unina.it</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Patrizio Pelliccione</h3>
+                <p>Full Professor</p>
+                <p>patrizio.pelliccione@gssi.it</p>
             </div>
         </div>
+
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-3">
-        <p>© 2025 TwinArch - All Rights Reserved</p>
+   <footer class="footer bg-light py-3 text-center">
+        <p>&copy; 2025 TwinArch Project - All Rights Reserved | <a href="authors.html" class="text-decoration-none">View Authors</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
