@@ -107,6 +107,46 @@
     </div>
     <p class="mt-3 text-center text-muted">CTV: UML Component Diagram. </p>
 
+    <!-- Table Section -->
+    <div class="container table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Azure Digital Twins</th>
+                    <th>Eclipse Ditto</th>
+                    <th>FIWARE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><em>dtc1</em></td><td>PhysicalTwin</td><td>A real-world asset to be replicated by the Digital Twin.</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+                <tr><td><em>dtc2</em></td><td>DataProvider</td><td>An intermediary facilitating the transmission of raw data from the physical to the Digital Twin.</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+                <tr><td><em>dtc3</em></td><td>DataReceiver</td><td>A receiver ensuring feedback, updates, or commands from the Digital Twin reach the physical twin.</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+                <tr><td><em>dtc4</em></td><td>P2DAdapter</td><td>A converter that translates physical system data into formats usable by the Digital Twin.</td><td>Event Route</td><td>Connectivity API</td><td>IoT Agent</td></tr>
+                <tr><td><em>dtc5</em></td><td>D2PAdapter</td><td>A translator that transforms Digital Twin outputs into formats usable by the physical twin.</td><td>Event Grid</td><td>Connectivity API</td><td>IoT Agent</td></tr>
+                <tr><td><em>dtc6</em></td><td>DataProcessor</td><td>A processing unit that filters and organizes raw data, preparing it for integration into the Digital Twin.</td><td>Azure Event Hub</td><td>Thing Management</td><td>Context Broker</td></tr>
+                <tr><td><em>dtc7</em></td><td>StorageManager</td><td>A component that organizes and manages a shared data repository for efficient storage and retrieval.</td><td>Azure Event Hub</td><td>Thing Management</td><td>Context Broker</td></tr>
+                <tr><td><em>dtc8</em></td><td>DataManager</td><td>A centralized component ensuring data consistency and availability, aggregating functionalities of the data processor and storage manager.</td><td>Azure Event Hub</td><td>Thing Management</td><td>QuantumLeap</td></tr>
+                <tr><td><em>dtc9</em></td><td>SharedStorage</td><td>A data accumulator, responsible for storing heterogeneous data from both physical and digital twins.</td><td>Azure Data Lake</td><td>MongoDB</td><td>TimescaleDB</td></tr>
+                <tr><td><em>dtc10</em></td><td>ShadowManager</td><td>Responsible for creating, managing, and overseeing the lifecycle of multiple digital shadows.</td><td>Model Management</td><td>Ditto Management</td><td>Context Broker</td></tr>
+                <tr><td><em>dtc11</em></td><td>ModelManager</td><td>A component responsible for creating and managing multiple digital models to simulate different aspects.</td><td>Not at all</td><td>Not at all</td><td>Not at all</td></tr>
+                <tr><td><em>dtc12</em></td><td>ModelEngine</td><td>A processing unit of digital models, responsible for executing simulations and generating results based on the modeled scenarios.</td><td>Not at all</td><td>Not at all</td><td>Not at all</td></tr>
+                <tr><td><em>dtc13</em></td><td>Simulator</td><td>A virtualizer of real-world systems, responsible for simulating the behavior of the physical system under various conditions.</td><td>Not at all</td><td>Not at all</td><td>Not at all</td></tr>
+                <tr><td><em>dtc14</em></td><td>TwinManager</td><td>An orchestrator synchronizing the functionalities of shadow and model managers with the service-related components for cohesive DT operations.</td><td>Twin Management</td><td>Ditto Management</td><td>Context Broker</td></tr>
+                <tr><td><em>dtc15</em></td><td>StateMonitor</td><td>A monitoring component, responsible for collecting and forwarding real/simulated states to other components for further analysis or action.</td><td>Azure Stream Analytics</td><td>Event Handling</td><td>FIWARE Cosmos</td></tr>
+                <tr><td><em>dtc16</em></td><td>DeviationDetector</td><td>A comparison unit, responsible for identifying deviations by comparing real or predicted states with expected states to detect any deviation.</td><td>Multivariate Detection toolkit</td><td>Not at all</td><td>FIWARE Perseo</td></tr>
+                <tr><td><em>dtc17</em></td><td>Predictor</td><td>A forecasting component, responsible for using current and historical data to anticipate potential future states of the physical system.</td><td>Azure ML and DL</td><td>Not at all</td><td>FIWARE Cosmos</td></tr>
+                <tr><td><em>dtc18</em></td><td>Analyzer</td><td>A detailed analytical component, responsible for analyzing real, predicted, and simulated states to extract meaningful insights.</td><td>Azure Stream Analytics</td><td>Partially</td><td>FIWARE Perseo and Cosmos</td></tr>
+                <tr><td><em>dtc19</em></td><td>SolutionFinder</td><td>A component responsible for finding the best set of actions to return the system to a desired state after deviation detection.</td><td>Not at all</td><td>Not at all</td><td>Not at all</td></tr>
+                <tr><td><em>dtc20</em></td><td>ScenarioGenerator</td><td>A generator designed to create diverse scenarios, facilitating the preparation and execution of multiple simulations.</td><td>Not at all</td><td>Not at all</td><td>Not at all</td></tr>
+                <tr><td><em>dtc21</em></td><td>Planner</td><td>A planning unit, responsible for developing a solution plan to restore the system to a desired state when deviations or anomalies are detected.</td><td>Not at all</td><td>Not at all</td><td>Not at all</td></tr>
+                <tr><td><em>dtc22</em></td><td>FeedbackExecutor</td><td>A generator of alerts or actionable instructions into the physical system.</td><td>Not at all</td><td>Not at all</td><td>Not at all</td></tr>
+            </tbody>
+        </table>
+    </div>
+
 
     <div class="box">
         <p class="text-center">
