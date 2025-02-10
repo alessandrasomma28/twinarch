@@ -109,149 +109,151 @@
 
     <!-- Table Section -->
     <div class="container table-container">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Azure Digital Twins</th>
-                    <th>Eclipse Ditto</th>
-                    <th>FIWARE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><em>dte1</em></td>
-                    <td>PhysicalTwin</td>
-                    <td>A real entity to be digitally replicated.</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td><em>dte2</em></td>
-                    <td>DataProvider</td>
-                    <td>A facilitator of data, responsible for transmitting raw data from the physical system to the DT.</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td><em>dte3</em></td>
-                    <td>DataReceiver</td>
-                    <td>A mediator between physical and digital twins, responsible for ensuring the transmission of feedback from the DT to the physical world.</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td><em>dte4</em></td>
-                    <td>Adapter</td>
-                    <td>An information converter, responsible for ensuring compatibility and integration between multiple data sources and the DT.</td>
-                    <td>Event Routing</td>
-                    <td>Protocol Adapter</td>
-                    <td>IoT Agent</td>
-                </tr>
-                <tr>
-                    <td><em>dte5</em></td>
-                    <td>P2DAdapter</td>
-                    <td>An adapter for physical data, responsible for converting and preparing data for integration into the DT system.</td>
-                    <td>Event Route</td>
-                    <td>Connectivity API</td>
-                    <td>IoT Agent</td>
-                </tr>
-                <tr>
-                    <td><em>dte6</em></td>
-                    <td>D2PAdapter</td>
-                    <td>An adapter for DT data, responsible for converting and preparing data for integration into the physical twin.</td>
-                    <td>Event Grid</td>
-                    <td>Connectivity API</td>
-                    <td>IoT Agent</td>
-                </tr>
-                <tr>
-                    <td><em>dte7</em></td>
-                    <td>DigitalRepresentation</td>
-                    <td>A digital representation of a real-world entity, responsible for abstracting its key structural and behavioral aspects.</td>
-                    <td>Partially</td>
-                    <td>Partially</td>
-                    <td>Partially</td>
-                </tr>
-                <tr>
-                    <td><em>dte8</em></td>
-                    <td>DigitalShadow</td>
-                    <td>A collection of temporal data traces, responsible for representing physical twin states grouped by shadow types.</td>
-                    <td>Digital Twin Model</td>
-                    <td>Things</td>
-                    <td>Context Entities</td>
-                </tr>
-                <tr>
-                    <td><em>dte9</em></td>
-                    <td>ShadowManager</td>
-                    <td>A creator and manager of multiple Digital Shadows, responsible for lifecycle management of shadows.</td>
-                    <td>Model Management</td>
-                    <td>Thing Management</td>
-                    <td>Context Broker</td>
-                </tr>
-                <tr>
-                    <td><em>dte10</em></td>
-                    <td>DigitalModel</td>
-                    <td>A digital representation of the physical twin's behavioral aspects, enabling dynamic simulation.</td>
-                    <td>Not at all</td>
-                    <td>Not at all</td>
-                    <td>Not at all</td>
-                </tr>
-                <tr>
-                    <td><em>dte11</em></td>
-                    <td>ModelManager</td>
-                    <td>A creator and manager of multiple Digital Models, responsible for integrating and synchronizing them.</td>
-                    <td>Not at all</td>
-                    <td>Not at all</td>
-                    <td>Not at all</td>
-                </tr>
-                <tr>
-                    <td><em>dte12</em></td>
-                    <td>TwinManager</td>
-                    <td>A central orchestrator combining ShadowManager and ModelManager functionalities for cohesive management.</td>
-                    <td>Partially</td>
-                    <td>Partially</td>
-                    <td>Partially</td>
-                </tr>
-                <tr>
-                    <td><em>dte13</em></td>
-                    <td>ServiceManager</td>
-                    <td>A creator of DT services, responsible for managing and executing them.</td>
-                    <td>Azure Stream Analytics</td>
-                    <td>Event Handling</td>
-                    <td>Perseo</td>
-                </tr>
-                <tr>
-                    <td><em>dte14</em></td>
-                    <td>FeedbackProvider</td>
-                    <td>A generator of alerts, events, and commands, responsible for channeling feedback from the DT to the physical twin.</td>
-                    <td>Not at all</td>
-                    <td>Not at all</td>
-                    <td>Not at all</td>
-                </tr>
-                <tr>
-                    <td><em>dte15</em></td>
-                    <td>DataManager</td>
-                    <td>An aggregator of data circulating within the DT, responsible for efficient management, storage, and retrieval.</td>
-                    <td>Azure Event Hub</td>
-                    <td>Thing Management</td>
-                    <td>Context Broker and QuantumLeap</td>
-                </tr>
-                <tr>
-                    <td><em>dte16</em></td>
-                    <td>DataModel</td>
-                    <td>A model representing the logical structure of exchanged data, for ensuring data interoperability.</td>
-                    <td>Interoperability DTDL Models</td>
-                    <td>Thing Management</td>
-                    <td>Smart Data Models</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Azure Digital Twins</th>
+                <th>Eclipse Ditto</th>
+                <th>FIWARE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><em>dte1</em></td>
+                <td>PhysicalTwin</td>
+                <td>A real entity to be digitally replicated.</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><em>dte2</em></td>
+                <td>DataProvider</td>
+                <td>A facilitator of data, responsible for transmitting raw data from the physical system to the DT.</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><em>dte3</em></td>
+                <td>DataReceiver</td>
+                <td>A mediator between physical and digital twins, responsible for ensuring the transmission of feedback from the DT to the physical world.</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><em>dte4</em></td>
+                <td>Adapter</td>
+                <td>An information converter, responsible for ensuring compatibility and integration between multiple data sources and the DT.</td>
+                <td>Event Routing</td>
+                <td>Protocol Adapter</td>
+                <td>IoT Agent</td>
+            </tr>
+            <tr>
+                <td><em>dte5</em></td>
+                <td>P2DAdapter</td>
+                <td>An adapter for physical data, responsible for converting and preparing data for integration into the DT system.</td>
+                <td>Event Route</td>
+                <td>Connectivity API</td>
+                <td>IoT Agent</td>
+            </tr>
+            <tr>
+                <td><em>dte6</em></td>
+                <td>D2PAdapter</td>
+                <td>An adapter for DT data, responsible for converting and preparing data for integration into the physical twin.</td>
+                <td>Event Grid</td>
+                <td>Connectivity API</td>
+                <td>IoT Agent</td>
+            </tr>
+            <tr>
+                <td><em>dte7</em></td>
+                <td>DigitalRepresentation</td>
+                <td>A digital representation of a real-world entity, responsible for abstracting its key structural and behavioral aspects.</td>
+                <td>∼</td>
+                <td>∼</td>
+                <td>∼</td>
+            </tr>
+            <tr>
+                <td><em>dte8</em></td>
+                <td>DigitalShadow</td>
+                <td>A collection of temporal data traces, responsible for representing physical twin states grouped by shadow types.</td>
+                <td>Digital Twin Model</td>
+                <td>Things</td>
+                <td>Context Entities</td>
+            </tr>
+            <tr>
+                <td><em>dte9</em></td>
+                <td>ShadowManager</td>
+                <td>A creator and manager of multiple Digital Shadows, responsible for lifecycle management of shadows.</td>
+                <td>Model Management</td>
+                <td>Thing Management</td>
+                <td>Context Broker</td>
+            </tr>
+            <tr>
+                <td><em>dte10</em></td>
+                <td>DigitalModel</td>
+                <td>A digital representation of the physical twin's behavioral aspects, enabling dynamic simulation.</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><em>dte11</em></td>
+                <td>ModelManager</td>
+                <td>A creator and manager of multiple Digital Models, responsible for integrating and synchronizing them.</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><em>dte12</em></td>
+                <td>TwinManager</td>
+                <td>A central orchestrator combining ShadowManager and ModelManager functionalities for cohesive management.</td>
+                <td>∼</td>
+                <td>∼</td>
+                <td>∼</td>
+            </tr>
+            <tr>
+                <td><em>dte13</em></td>
+                <td>ServiceManager</td>
+                <td>A creator of DT services, responsible for managing and executing them.</td>
+                <td>Azure Stream Analytics</td>
+                <td>Event Handling</td>
+                <td>Perseo</td>
+            </tr>
+            <tr>
+                <td><em>dte14</em></td>
+                <td>FeedbackProvider</td>
+                <td>A generator of alerts, events, and commands, responsible for channeling feedback from the DT to the physical twin.</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><em>dte15</em></td>
+                <td>DataManager</td>
+                <td>An aggregator of data circulating within the DT, responsible for efficient management, storage, and retrieval.</td>
+                <td>Azure Event Hub</td>
+                <td>Thing Management</td>
+                <td>Context Broker and QuantumLeap</td>
+            </tr>
+            <tr>
+                <td><em>dte16</em></td>
+                <td>DataModel</td>
+                <td>A model representing the logical structure of exchanged data, for ensuring data interoperability.</td>
+                <td>Interoperability DTDL Models</td>
+                <td>Thing Management</td>
+                <td>Smart Data Models</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
 
     <section class="container my-5">
     <div class="box">
