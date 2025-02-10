@@ -101,54 +101,150 @@
     <p>If you encounter any issues or need further clarification, please do not hesitate to contact us.</p>
     </div>
 
-    <p>The final validation aimed to evaluate whether TwinArch is complete, useful, and easy to apply across various Digital Twin systems. Respondents evaluated three key hypotheses:</p>
-<ul>
-    <li><strong>Completeness (H1):</strong> Does TwinArch cover all essential elements?</li>
-    <li><strong>Usefulness (H2):</strong> Does it provide practical value for Digital Twin design and development?</li>
-    <li><strong>Perceived Usability (H3):</strong> Is it intuitive and easy to apply in practice?</li>
-</ul>
+    <div class="container content-section">
 
-<p>The responses were captured using a Likert scale, with detailed visualizations shown below.</p>
+    <p>The online survey aimed to evaluate whether TwinArch is <em>complete</em>, <em>useful</em>, and <em>usable
+    </em> across application domains of Digital Twin systems. Respondents evaluated three key hypotheses:</p>
+    <ul>
+        <li><strong>H1. Completeness:</strong> The Architectural View adequately represents all necessary elements.</li>
+        <li><strong>H2. Usefulness:</strong> The Architectural View provides practical value for DT design and
+            development.</li>
+        <li><strong>H3. Perceived Usability:</strong> The Architectural View is intuitive and easy to apply in
+            practice. </li>
+    </ul>
 
-<!-- Likert Scale Plot -->
-<div class="text-center">
-    <img src="./figures/likertscale.png" alt="Likert plot for questionnaire answers"
-         class="img-fluid shadow-lg rounded"  style="max-width: 70%; height: auto;">
-    <p class="text-center text-muted">Figure: Likert plot summarizing completeness, usefulness, and perceived usability.</p>
-</div>
+    <p>The online survey comprised four phases: <em>(i)</em> subject selection, <em>(ii)</em> questionnaire design, <em>(iii)</em> results analysis, and <em>(iv)</em> data reporting.</p>
 
-<h4>Key Findings</h4>
-<ul>
-    <li><strong>Completeness:</strong> The majority of respondents (65–80%) agreed or strongly agreed that TwinArch is complete. Practitioners highlighted its comprehensive architectural coverage and emphasized its potential to address the current lack of unified Digital Twin definitions.</li>
-    <li><strong>Usefulness:</strong> 45–55% of respondents strongly agreed that TwinArch provides practical value, particularly for fostering collaboration between stakeholders and guiding development through well-structured guidelines.</li>
-    <li><strong>Perceived Usability:</strong> Although generally positive, perceived usability received slightly lower scores, with practitioners pointing out challenges related to practical examples and customization for domain-specific applications.</li>
-</ul>
+    <h4>Subject Selection</h4>
+    <p>To evaluate TwinArch completeness, usefulness, and perceived usability, survey participants were identified
+        through three main sources: <em>(i)</em> authorship and contact details from papers referenced during the
+        TwinArch design, <em>(ii)</em> advertisements on social media and forums, and <em>(iii)</em>  recognized
+        experts in Digital Twin research. A total of <em>20 DT experts</em> participated in the survey, consisting of
+        9 industry practitioners and 11 academic researchers.
+    </p>
 
+        <h5>Summary of Representative Profiles</h5>
+        <table class="table table-bordered table-striped text-center">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Experience</th>
+                    <th>Affiliation</th>
+                    <th>Role</th>
+                    <th># Individuals</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P1</td>
+                    <td>1 year</td>
+                    <td>Industry</td>
+                    <td>DT Developer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>1 year</td>
+                    <td>Academia</td>
+                    <td>Assistant Professor</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P3</td>
+                    <td>1-3 years</td>
+                    <td>Industry</td>
+                    <td>Research Engineer</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>P4</td>
+                    <td>1-3 years</td>
+                    <td>Academia</td>
+                    <td>Researcher/Assistant Professor</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>P5</td>
+                    <td>&gt;3 years</td>
+                    <td>Industry</td>
+                    <td>(Senior) Research Engineer</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>P6</td>
+                    <td>&gt;3 years</td>
+                    <td>Academia</td>
+                    <td>Associate/Full Professor</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Questionnaire Design</h4>
+        <p>
+        The questionnaire was organized into six sections, comprising a total of 23 questions with a mix of closed
+            and open-ended formats. The first section gathered background information about the respondents, while
+            sections two through five focused on TwinArch’s architectural views. Each of these sections included
+            closed questions with a rating scale from <em>Strongly Disagree</em> to <em>Strongly Agree</em> to assess
+            three key quality factors for each view. The final section evaluated the overall TwinArch proposal and
+            included open-ended questions, allowing participants to elaborate on their responses and provide
+            additional insights, including potential strengths and limitations they identified.
+        </p>
+
+         <p>The questionnaire is available at:
+            <a href="./replicationpackage/QuestionnaireforTwinArchValidation.pdf" target="_blank"
+               class="text-decoration-none"><strong>Questionnaire for TwinArch Validation</strong></a>.
+        </p>
+
+    <h4>Result Analysis and Reporting</h4>
+    <p>The responses were captured using a Likert scale shown in Figure 1. The majority of respondents (65–80%)
+        agreed or strongly agreed that TwinArch is complete. Practitioners highlighted its comprehensive
+        architectural coverage and emphasized its potential to address the current lack of a Digital Twin
+        reference architecture.
+    </p>
+
+    <!-- Likert Scale Plot -->
+    <div class="text-center">
+        <img src="./figures/likertscale.png" alt="Likert plot for questionnaire answers" class="img-fluid shadow-lg rounded" style="max-width: 70%; height: auto;">
+        <p class="text-center text-muted">Figure 1: Likert plot of questionnaire responses.</p>
+    </div>
+        <p>
+    Moreover, 45–55% of respondents strongly agreed that TwinArch provides practical value, particularly for
+            fostering collaboration between stakeholders and guiding development through well-structured guidelines.
+    </p>
+    <p> Regarding perceived usability, although the feedback was generally positive, the scores were slightly lower
+        compared to completeness and usefulness. Practitioners pointed out challenges related to practical examples
+        and the need for customization to fit domain-specific applications.
+    </p>
+
+     <h5>Statistical and Practical Significance</h5>
 <!-- Boxplot Figure -->
-<div class="text-center">
-    <img src="./figures/boxplot.png" alt="Box plot for questionnaire answers" class="img-fluid shadow-lg rounded"
-         style="max-width: 70%; height: auto;">
-    <p class="text-center text-muted">Figure 1: Box plots comparing online survey responses.</p>
-</div>
+    <div class="text-center">
+        <img src="./figures/boxplot.png" alt="Box plot for questionnaire answers" class="img-fluid shadow-lg rounded"
+             style="max-width: 70%; height: auto;">
+        <p class="text-center text-muted">Figure 2: Box plots comparing online survey responses.</p>
+    </div>
+        <p>To further analyze the responses, a Wilcoxon signed-rank test was conducted to determine the statistical
+            significance of the hypotheses. The results confirmed that the responses were significantly positive
+            across  all views and attributes as shown in Figure 3.</p>
+        <!-- Wilcoxon Test Plot -->
+        <div class="text-center">
+        <img src="./figures/wilxplot.png" alt="Wilcoxon test results for statistical significance"
+             class="img-fluid shadow-lg rounded" style="max-width: 35%; height: auto;">
+        <p class="text-center text-muted">Figure 2: Wilcoxon test results.</p>
+        </div>
 
-<h4>Statistical and Practical Significance</h4>
-<p>To further analyze the responses, a Wilcoxon signed-rank test was conducted to determine the statistical significance of the hypotheses. The results confirmed that the responses were significantly positive across all views and attributes.</p>
+        <p>Additionally, the practical significance of the findings was evaluated using Cohen’s effect size measure,
+            which indicated a large effect across all attributes. Completeness and usefulness were especially
+            notable,  while perceived usability, though slightly lower, still demonstrated strong practical utility.</p>
 
-<!-- Wilcoxon Test Plot -->
-<div class="text-center">
-    <img src="./figures/wilxplot.png" alt="Wilcoxon test results for statistical significance"
-         class="img-fluid shadow-lg rounded" style="max-width: 35%; height: auto;">
-    <p class="text-center text-muted">Figure 2: Wilcoxon test results.</p>
-</div>
-
-<p>Additionally, the practical significance of the findings was evaluated using Cohen’s effect size measure, which indicated a large effect across all attributes. Completeness and usefulness were especially notable, while perceived usability, though slightly lower, still demonstrated strong practical utility.</p>
-
-<!-- Practical Significance Plot -->
-<div class="text-center">
-    <img src="./figures/practicalsign.png" alt="Effect size for practical significance"
-         class="img-fluid shadow-lg rounded" style="max-width: 35%; height: auto;">
-    <p class="text-center text-muted">Figure 3: Effect size showing practical significance of responses.</p>
-</div>
+    <!-- Practical Significance Plot -->
+    <div class="text-center">
+        <img src="./figures/practicalsign.png" alt="Effect size for practical significance"
+             class="img-fluid shadow-lg rounded" style="max-width: 35%; height: auto;">
+        <p class="text-center text-muted">Figure 3: Effect size showing practical significance of responses.</p>
+    </div>
+    </div>
 
 
 
