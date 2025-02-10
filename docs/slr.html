@@ -14,12 +14,21 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
-    .reduced-img {
-        max-width: 80%;
-        height: auto;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
 
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
 
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 
 </head>
@@ -79,17 +88,143 @@
      <header class="container text-center my-5">
         <h1>Systematic Literature Review</h1>
         <h5></h5>
-         <h6 class="text-muted"><em>Replication package attached in the blue box at the end of the page.</em></h6>
+         <h6 class="text-muted"><em>Replication package attached in the blue box.</em></h6>
     </header>
 
-
-    <div class="text-center">
-        <img src="./figures/designscienceprocess.png" alt="DS Process"
-             class="img-fluid shadow-lg rounded"
-                 style="max-width: 40%; height: auto;">
+    < <div class="container box p-4 my-5">
+        <h3 class="text-center">Replication Guidelines</h3>
+        <p>This section will guide you through the steps to replicate our study using the same methodology we
+            applied. We provide detailed instructions, along with key resources to help you complete each step
+            successfully.  While some steps may be challenging or impractical to fully replicate, we have included a
+            comprehensive replication package containing critical artifacts (such as the intial query results) to
+            assist you.</p>
+        <p>If you encounter any issues or need clarification at any point, do not hesitate to contact us.</p>
+        <p class="text-center mt-4">
+            <a href="path/to/replication-package.zip" class="btn btn-primary btn-lg" download>
+                <strong>Download Replication Package (.zip)</strong>
+            </a>
+        </p>
     </div>
-    <p class="mt-3 text-center text-muted">Design Science Process. </p>
 
+    <div class="container content-section">
+        <h2>Research Process and Cycles</h2>
+        <p>We adopted the <em>design science</em> methodology, a structured process comprising three primary phases:
+            <em>context awareness</em>, <em>solution synthesis</em>, and <em>solution validation</em>.  Our iterative
+            process was organized into three cycles, each encompassing the design science phases to understand the
+            problem context, devise a solution, and validate it.</p>
+
+        <div class="text-center">
+            <img src="./figures/designscienceprocess.png" alt="DS Process" class="img-fluid shadow-lg rounded"
+                 style="max-width: 50%; height: auto;">
+        </div>
+        <p class="mt-3 text-center text-muted">Figure 1: Design Science Process.</p>
+
+        <h4>First Cycle: Initial Investigation</h4>
+
+        <p>The first research cycle aimed to explore the current state of Digital Twin architectures.  A Systematic
+            Literature Review (SLR) was conducted to identify key architectural elements and pinpoint limitations in
+            existing approaches.</p>
+        <p>We used the search string to perform a systematic literature review to understand the studies discussing
+            DT architectures. The SLR followed the activities shown in Figure 2.</p>
+
+        <div class="text-center">
+            <img src="./figures/slrprocess.png" alt="SLR process" class="img-fluid shadow-lg rounded" style="max-width: 60%; height: auto;">
+        </div>
+        <p class="mt-3 text-center text-muted">Figure 2: Systematic Literature Review Process.</p>
+
+        <p>We present precise descriptions for each activity in the
+            <a href="../replicationpackage/TwinArch_Literature_Study_Report.pdf" target="_blank"
+               class="text-decoration-none"><strong>SLR report</strong></a>.
+        </p>
+
+        <p>In short, we searched for the string in IEEEXplore, ACM Digital Library, and Scopus. Then, we applied
+            inclusion and exclusion criteria from the Table 1 below to filter relevant studies. </p>
+
+
+        <h5>Inclusion and Exclusion Criteria</h5>
+        <div class="text-center">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IC1</td>
+                    <td>The study is related to defining and documenting Digital Twin architectures.</td>
+                    <td>Ensure relevance to the topic under investigation.</td>
+                </tr>
+                <tr>
+                    <td>IC2</td>
+                    <td>The study is written in English.</td>
+                    <td>To ensure all reviewers can analyze the work.</td>
+                </tr>
+                <tr>
+                    <td>IC3</td>
+                    <td>The study is peer-reviewed.</td>
+                    <td>Guarantees quality and reliability of the source.</td>
+                </tr>
+                <tr>
+                    <td>IC4</td>
+                    <td>The study is a primary study.</td>
+                    <td>Avoids secondary sources that do not contribute original findings.</td>
+                </tr>
+                <tr>
+                    <td>IC5</td>
+                    <td>The study has been published after 2019.</td>
+                    <td>Publications on DT architectures significantly increased after 2019.</td>
+                </tr>
+                <tr>
+                    <td>IC6</td>
+                    <td>The study was published in journals or conference proceedings.</td>
+                    <td>Ensures reputable publication sources.</td>
+                </tr>
+                <tr>
+                    <td>IC7</td>
+                    <td>The study was published in high-ranking venues.</td>
+                    <td>Improves the credibility of included studies.</td>
+                </tr>
+                <tr>
+                    <td>EC1</td>
+                    <td>The study is an earlier version of a more recent or complete version.</td>
+                    <td>Avoids redundancy in reviewed studies.</td>
+                </tr>
+                <tr>
+                    <td>EC2</td>
+                    <td>The study contains similar content to other studies by the same authors.</td>
+                    <td>Prevents duplicates from the same authors.</td>
+                </tr>
+                <tr>
+                    <td>EC3</td>
+                    <td>The study treats Digital Twins solely as simulated models.</td>
+                    <td>Ensures a broader focus beyond simple simulation.</td>
+                </tr>
+                <tr>
+                    <td>EC4</td>
+                    <td>The study conflates Digital Twins with the Metaverse.</td>
+                    <td>Clarifies that Digital Twins are distinct from immersive environments.</td>
+                </tr>
+                <tr>
+                    <td>EC5</td>
+                    <td>The study confuses Digital Twins with AI models.</td>
+                    <td>Distinguishes between system-wide representations and isolated models.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <p class="mt-3 text-center text-muted">Table 1: Inclusion and Exclusion Criteria.</p>
+
+        <h4>Second Cycle: Preliminary Design</h4>
+        <p>In the second research cycle, the validated architectural elements were used to create the initial draft of the Digital Twin Reference Architecture. The draft followed the SEI Views and Beyond method and was presented to five practitioners, including academic experts and industry professionals. Their feedback, emphasizing the need for alignment with real-world Digital Twin platforms and the inclusion of practical examples, guided further improvements.</p>
+
+        <h4>Third Cycle: Final Artifact Development</h4>
+        <p>The third research cycle focused on refining TwinArch based on previous feedback. An additional investigation of Digital Twin platforms, including Eclipse Ditto, Azure Digital Twins, and FIWARE, helped better align the architecture with practical applications. This refinement introduced missing elements, like the Data Model, and improved the framework’s relevance to real-world use cases. The final validation involved an online survey of 20 Digital Twin experts from academia and industry. Their feedback highlighted future improvement opportunities, such as domain-specific adaptations of TwinArch.</p>
+
+        <p>This iterative approach ensured that the TwinArch framework evolved through systematic research, expert feedback, and real-world analysis, making it a well-rounded and practical solution for Digital Twin architecture design.</p>
+    </div>
 
    <footer class="footer bg-light py-3 text-center">
         <p>&copy; 2025 TwinArch Project - All Rights Reserved | <a href="authors.html" class="text-decoration-none">View Authors</a></p>
