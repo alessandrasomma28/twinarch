@@ -100,8 +100,8 @@
             assist you.</p>
         <p>If you encounter any issues or need clarification at any point, do not hesitate to contact us.</p>
         <p class="text-center mt-4">
-            <a href="path/to/replication-package.zip" class="btn btn-primary btn-lg" download>
-                <strong>Download Replication Package (.zip)</strong>
+            <a href="../replicationpackage/replication-package.zip" class="btn btn-primary btn-lg" download>
+                <strong>Download replicationpackage.zip</strong>
             </a>
         </p>
     </div>
@@ -132,13 +132,21 @@
         </div>
         <p class="mt-3 text-center text-muted">Figure 2: Systematic Literature Review Process.</p>
 
-        <p>We present precise descriptions for each activity in the
+        <p>The detailed descriptions of each activity is available in the
             <a href="../replicationpackage/TwinArch_Literature_Study_Report.pdf" target="_blank"
                class="text-decoration-none"><strong>SLR report</strong></a>.
         </p>
 
-        <p>In short, we searched for the string in IEEEXplore, ACM Digital Library, and Scopus. Then, we applied
-            inclusion and exclusion criteria from the Table 1 below to filter relevant studies. </p>
+        <p>In short, we performed the search using Scopus and retrieved 5508 studies. We then applied the inclusion
+            and exclusion criteria (IC/EC) from Table 1 below to filter the relevant studies, executed forward and
+            backward snowballing, obtaining the final set of <em>45 primary studies</em>. You can
+            view or download the full results of the Scopus query and the list of selected papers based on the IC/EC
+            criteria are available in the <a href="../replicationpackage/replicationpackage.zip"
+                                             class="text-decoration-none" download>
+                <strong>replicationpackage.zip</strong>
+            </a>
+        </p>
+
 
 
         <h5>Inclusion and Exclusion Criteria</h5>
@@ -155,12 +163,12 @@
                 <tr>
                     <td>IC1</td>
                     <td>The study is related to defining and documenting Digital Twin architectures.</td>
-                    <td>Ensure relevance to the topic under investigation.</td>
+                    <td>Ensures relevance to the topic under investigation.</td>
                 </tr>
                 <tr>
                     <td>IC2</td>
                     <td>The study is written in English.</td>
-                    <td>To ensure all reviewers can analyze the work.</td>
+                    <td>Ensures all reviewers can analyze the work.</td>
                 </tr>
                 <tr>
                     <td>IC3</td>
@@ -180,7 +188,7 @@
                 <tr>
                     <td>IC6</td>
                     <td>The study was published in journals or conference proceedings.</td>
-                    <td>Ensures reputable publication sources.</td>
+                    <td>Ensures that only studies from these two types of publications are included. </td>
                 </tr>
                 <tr>
                     <td>IC7</td>
@@ -194,23 +202,18 @@
                 </tr>
                 <tr>
                     <td>EC2</td>
-                    <td>The study contains similar content to other studies by the same authors.</td>
-                    <td>Prevents duplicates from the same authors.</td>
+                    <td>The study treats Digital Twins solely as simulated models.</td>
+                    <td>Ensures the Digital Twin is not mixed with simple simulation.</td>
                 </tr>
                 <tr>
                     <td>EC3</td>
-                    <td>The study treats Digital Twins solely as simulated models.</td>
-                    <td>Ensures a broader focus beyond simple simulation.</td>
+                    <td>The study conflates Digital Twins with the Metaverse.</td>
+                    <td>Avoids that Digital Twins are confused with immersive environments.</td>
                 </tr>
                 <tr>
                     <td>EC4</td>
-                    <td>The study conflates Digital Twins with the Metaverse.</td>
-                    <td>Clarifies that Digital Twins are distinct from immersive environments.</td>
-                </tr>
-                <tr>
-                    <td>EC5</td>
                     <td>The study confuses Digital Twins with AI models.</td>
-                    <td>Distinguishes between system-wide representations and isolated models.</td>
+                    <td>Distinguishes between proper Digital Twin and isolated AI-based models.</td>
                 </tr>
             </tbody>
         </table>
@@ -218,7 +221,10 @@
         <p class="mt-3 text-center text-muted">Table 1: Inclusion and Exclusion Criteria.</p>
 
         <h4>Second Cycle: Preliminary Design</h4>
-        <p>In the second research cycle, the validated architectural elements were used to create the initial draft of the Digital Twin Reference Architecture. The draft followed the SEI Views and Beyond method and was presented to five practitioners, including academic experts and industry professionals. Their feedback, emphasizing the need for alignment with real-world Digital Twin platforms and the inclusion of practical examples, guided further improvements.</p>
+        <p>In the second research cycle, the validated architectural elements were used to create the initial draft
+            of the Digital Twin Reference Architecture, documented using the Software Engineering Institute Views &
+            Beyond methodology. The draft was presented to five practitioners, including academic experts and
+            industry professionals. Their feedback guided further improvements.</p>
 
         <h4>Third Cycle: Final Artifact Development</h4>
         <p>The third research cycle focused on refining TwinArch based on previous feedback. An additional investigation of Digital Twin platforms, including Eclipse Ditto, Azure Digital Twins, and FIWARE, helped better align the architecture with practical applications. This refinement introduced missing elements, like the Data Model, and improved the framework’s relevance to real-world use cases. The final validation involved an online survey of 20 Digital Twin experts from academia and industry. Their feedback highlighted future improvement opportunities, such as domain-specific adaptations of TwinArch.</p>
