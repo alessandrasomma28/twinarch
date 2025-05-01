@@ -132,11 +132,13 @@
             <tr><td><em>dtc7</em></td><td>StorageManager</td><td>A component that organizes and manages a shared data repository for efficient storage and retrieval.</td><td>Azure Event Hub</td><td>Thing Management</td><td>Context Broker</td></tr>
             <tr><td><em>dtc8</em></td><td>DataManager</td><td>A centralized component ensuring data consistency and availability, aggregating functionalities of the data processor and storage manager.</td><td>Azure Event Hub</td><td>Thing Management</td><td>QuantumLeap</td></tr>
             <tr><td><em>dtc9</em></td><td>SharedStorage</td><td>A data accumulator, responsible for storing heterogeneous data from both physical and digital twins.</td><td>Azure Data Lake</td><td>MongoDB</td><td>TimescaleDB</td></tr>
-            <tr><td><em>dtc10</em></td><td>ShadowManager</td><td>Responsible for creating, managing, and overseeing the lifecycle of multiple digital shadows.</td><td>Model Management</td><td>Ditto Management</td><td>Context Broker</td></tr>
+            <tr><td><em>dtc10</em></td><td>TraceManager</td><td>Responsible for creating, managing, and overseeing the
+                lifecycle of multiple digital traces.</td><td>Model Management</td><td>Ditto Management</td><td>Context
+                Broker</td></tr>
             <tr><td><em>dtc11</em></td><td>ModelManager</td><td>A component responsible for creating and managing multiple digital models to simulate different aspects.</td><td>❌</td><td>❌</td><td>❌</td></tr>
             <tr><td><em>dtc12</em></td><td>ModelEngine</td><td>A processing unit of digital models, responsible for executing simulations and generating results based on the modeled scenarios.</td><td>❌</td><td>❌</td><td>❌</td></tr>
             <tr><td><em>dtc13</em></td><td>Simulator</td><td>A virtualizer of real-world systems, responsible for simulating the behavior of the physical system under various conditions.</td><td>❌</td><td>❌</td><td>❌</td></tr>
-            <tr><td><em>dtc14</em></td><td>TwinManager</td><td>An orchestrator synchronizing the functionalities of shadow and model managers with the service-related components for cohesive DT operations.</td><td>Twin Management</td><td>Ditto Management</td><td>Context Broker</td></tr>
+            <tr><td><em>dtc14</em></td><td>TwinManager</td><td>An orchestrator synchronizing the functionalities of trace and model managers with the service-related components for cohesive DT operations.</td><td>Twin Management</td><td>Ditto Management</td><td>Context Broker</td></tr>
             <tr><td><em>dtc15</em></td><td>StateMonitor</td><td>A monitoring component, responsible for collecting and forwarding real/simulated states to other components for further analysis or action.</td><td>Azure Stream Analytics</td><td>Event Handling</td><td>FIWARE Cosmos</td></tr>
             <tr><td><em>dtc16</em></td><td>DeviationDetector</td><td>A comparison unit, responsible for identifying deviations by comparing real or predicted states with expected states to detect any deviation.</td><td>Multivariate Detection toolkit</td><td>❌</td><td>FIWARE Perseo</td></tr>
             <tr><td><em>dtc17</em></td><td>Predictor</td><td>A forecasting component, responsible for using current and historical data to anticipate potential future states of the physical system.</td><td>Azure ML and DL</td><td>❌</td><td>FIWARE Cosmos</td></tr>
@@ -155,7 +157,8 @@
         <p class="text-center">
             UML Component Diagram of TwinArch's component view is available in the <a href="./vpp/twinarch.vpp"
                                                                                       download  class="text-decoration-none"><strong>
-            twinarch.vpp</strong></a> file, which can be downloaded and opened using the Visual Paradigm modeling tool (version 16.2).
+            twinarch.vpp</strong></a> file, which can be downloaded and opened using the Visual Paradigm modeling
+            tool (version 17.1).
         </p>
         </div>
     </section>
